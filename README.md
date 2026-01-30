@@ -31,22 +31,6 @@ This project represents my learning journey and growth as a developer and design
 
 ---
 
-## 📂 Project Structure
-
-portfolio/
-│
-├── index.html → Main portfolio page
-├── style.css → Portfolio styling
-├── Assets/images/ → Image assets
-│
-└── dashboard/
-├── dashbord.html → Dashboard page
-├── styles.css → Dashboard styling
-└── script.js → Chart functionality
-
-
----
-
 ## ✨ Features
 
 ### Portfolio Website
