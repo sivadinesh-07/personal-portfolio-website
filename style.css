@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: #252525;
+}
+
+.container {
+    padding-bottom: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(212, 255, 0);
+}
+
+nav ul li a:hover {
+
+    color: white;
+    text-decoration: underline;
+    transition: 800ms ease;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+    margin-top: 20px;
+}
+
+.innnercontainer {
+    padding: 30px;
+    margin: 50px;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    border-radius: 25px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 20px;
+    width: 30%;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.para-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paragraph {
+    width: 1000px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.cta-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cta-btn button {
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(212, 255, 0);
+    color: rgb(66, 66, 66);
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta-btn button:hover {
+    background-color: white;
+    transition: 500ms ease-in;
+}
+
+.inner-main {
+    margin: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+
+}
+
+.left-content {
+    width: 50%;
+    height: 300px;
+    background: url(images/90e616b0883085b404a33fee60e31fae.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+
+.middle-content {
+    width: 50%;
+    height: 300px;
+    background: url(images/original-49a12e149270d50e6baca6301d07008c.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+
+.right-content {
+    width: 50%;
+    height: 300px;
+    background: url(images/Screenshot\ 2025-09-01\ 183145.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+.left-content:hover,.right-content:hover,.middle-content:hover{
+    transform:translateY(-5px);
+    transition: 300ms ease-in-out;
+}
+.left-content .img-content,
+.middle-content .img-content,
+.right-content .img-content {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: medium;
+}
+
+.left-content .img-content button,
+.middle-content .img-content button,
+.right-content .img-content button {
+    padding: 10px;
+    border-radius: 1000%;
+    border: none;
+    background-color: rgb(116, 116, 116);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.nd-div {
+    margin: 50px;
+}
+
+.nd-div h1 {
+    text-align: center;
+    color: rgb(212, 255, 0);
+}
+
+.skills {
+
+    display: grid;
+    grid-template-columns: repeat(5, minmax(300px, 1fr));
+    row-gap: 30px;
+    column-gap: 40px;
+    overflow-x: scroll;
+    margin: 50px;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+.skills::-webkit-scrollbar {
+    display: none;
+}
+
+.skill {
+    width: auto;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(66, 66, 66);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.skill:hover {
+    filter: drop-shadow(0px 0px 5px rgb(212, 255, 0));
+    transition: 100ms ease-in-out;
+    transform: scale(1.02);
+}
+
+.skill h2,
+progress {
+    margin-top: 20px;
+}
+
+progress {
+    width: 80%;
+    height: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* Track (background) for WebKit */
+progress::-webkit-progress-bar {
+    background: #d9d9d9;
+    border-radius: 10px;
+}
+
+.main-soft-skills h1 {
+    text-align: center;
+    color: rgb(212, 255, 0);
+}
+
+/* Filled value for WebKit browsers (Chrome, Safari, Opera) */
+progress::-webkit-progress-value {
+    background: rgb(133, 160, 0);
+    border-radius: 10px;
+}
+
+.tskills {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(300px, 1fr));
+    row-gap: 30px;
+    column-gap: 40px;
+    margin: 50px;
+    overflow-x: scroll;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+.tskills::-webkit-scrollbar {
+    display: none;
+}
+
+.main-tech-skills h1 {
+    text-align: center;
+    color: rgb(212, 255, 0);
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+
+}
+
+.left-about {
+    width: 50%;
+    color: white;
+    font-size: 17px;
+}
+
+.content li {
+    list-style: circle;
+}
+
+.right-about {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    line-height: 40px;
+}
+
+.img1 {
+    position: relative;
+    left: 0px;
+    margin-left: 230px;
+}
+
+.img2 {
+    position: relative;
+    z-index: 2;
+    left: -150px;
+}
+
+.img1 img {
+    border-radius: 20px;
+}
+
+.img2 img {
+    border-radius: 20px;
+    opacity: .9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.experience {
+    margin: 50px;
+}
+
+.left-experience h1 {
+    color: rgb(66, 66, 66);
+}
+
+.exp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.left-experience {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    color: rgb(66, 66, 66);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.skill button {
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(212, 255, 0);
+    color: rgb(66, 66, 66);
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.projects h1 {
+    color: rgb(212, 255, 0);
+    text-align: center;
+}
+
+.pskills {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    row-gap: 30px;
+    column-gap: 40px;
+    margin: 50px;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+.skill h1 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: rgb(133, 160, 0);
+    font-family: cursive;
+}
+
+.left-experience:hover {
+    filter: drop-shadow(0px 0px 5px rgb(212, 255, 0));
+    transition: 100ms ease-in-out;
+    transform: scale(1.02);
+}
+
+.right-experience:hover {
+    filter: drop-shadow(0px 0px 5px rgb(212, 255, 0));
+    transition: 100ms ease-in-out;
+    transform: scale(1.02);
+}
+
+.right-experience {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    color: rgb(66, 66, 66);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.left-experience h3 {
+    color: rgb(66, 66, 66);
+}
+
+.right-experience h3 {
+    color: rgb(66, 66, 66);
+}
+
+.webz {
+    margin-top: 20px;
+}
+
+.neuros {
+    margin-top: 20px;
+}
+
+.webz p {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.neuros p {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.webz h2 {
+    margin-top: 10px;
+
+}
+
+.neuros h2 {
+    margin-top: 10px;
+}
+
+.h1-exp {
+    text-align: center;
+}
+
+.foot {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-us {
+    margin: 50px;
+}
+
+.contact-us h1 {
+    text-align: center;
+    color: rgb(212, 255, 0);
+}
+
+.foot a {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 100%;
+    color: rgb(66, 66, 66);
+}
+
+.foot a:hover {
+    background-color: rgb(212, 255, 0);
+    color: #252525;
+    transition: 500ms ease-in-out;
+
+    transform: skew(.50deg, 2deg);
+}
+
+/* Your existing code is unchanged above ... */
+
+/* ================== Responsive Fixes ================== */
+@media (max-width: 1024px) {
+    .paragraph {
+        width: 90%;
+    }
+
+    .inner-main {
+        gap: 40px;
+    }
+
+    .exp {
+        flex-direction: column;
+    }
+
+    .left-experience,
+    .right-experience {
+        width: 100%;
+    }
+
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-about,
+    .right-about {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .inner-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content,
+    .middle-content,
+    .right-content {
+        width: 100%;
+    }
+
+    .skills,
+    .tskills {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .skill {
+        width: 250px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .heading {
+        text-align: center;
+    }
+
+    .paragraph {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .cta-btn button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .skills h2,
+    .tskills h2 {
+        width: 100%;
+        font-size: 10px;
+    }
+
+}
+.test img:hover{
+    transform:rotatey(-360deg) ;
+    transition: 1s ease-in-out;
+}
+.skill img:hover{
+    transform:rotatey(-360deg) ;
+    transition: 1s ease-in-out;
+}
